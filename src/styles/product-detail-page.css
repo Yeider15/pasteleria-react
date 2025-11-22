@@ -1,0 +1,146 @@
+/* Estilo del body de detalle */
+#cuerpo-producto {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor envoltorio (ahora solo define el ancho y centro) */
+#contenedor-detalle-producto {
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+/* Estilo del componente principal que ahora define el GRID de 2 columnas */
+.detalle-producto {
+    display: grid; /* APLICACIÓN DEL GRID PARA 2 COLUMNAS */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes del producto */
+.imagenes-producto {
+    width: 100%;
+    max-width: 100%;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-adicionales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen-adicional {
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.imagen-adicional:hover {
+    transform: scale(1.1);
+}
+
+/* Información del producto */
+.informacion-producto {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo-producto {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #5D4037;
+}
+
+.precio {
+    font-size: 24px;
+    color: #8B4513;
+    margin-top: 10px;
+}
+
+.descripcion-producto {
+    font-size: 14px;
+    color: #555656;
+    margin-top: 10px;
+}
+
+/* Separadores */
+.informacion-producto .separador {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+/* Botón añadir al carrito */
+.boton-agregar {
+    background-color: #b64b5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+    background-color: #e11243;
+}
+
+/* Productos relacionados */
+.seccion-productos-relacionados {
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo-productos-relacionados {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+.lista-productos-relacionados {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto-relacionado {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.producto-relacionado:hover {
+    transform: scale(1.05);
+}

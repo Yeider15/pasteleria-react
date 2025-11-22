@@ -1,0 +1,63 @@
+
+.acme-container {
+  padding: 30px;
+  background: #faefdf;
+  min-height: 100vh;
+}
+
+
+.acme-container h1,
+.acme-container h2 {
+  color: #5a2e0a;
+  font-weight: bold;
+}
+
+
+.acme-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 200px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.acme-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #c59a70;
+}
+
+.acme-btn-create {
+  background: #8a430c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.acme-btn {
+  background: #8a430c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.acme-btn:hover {
+  background: #6d3208;
+}

@@ -1,0 +1,96 @@
+/* src/styles/registroPage.css */
+
+/* Contenedor principal para el fondo del formulario */
+.registro-page-container {
+    /* La página original usa #body2. Aquí replicamos el fondo.
+       Ajusta la ruta de la imagen si es necesario, o déjala para el body global. */
+    /* background: url("../assets/img/fondo2b.jpg") center/cover fixed no-repeat; */
+    padding-bottom: 50px;
+}
+
+/* Contenedor del logo y título */
+.registro-header {
+    text-align: center; /* centra todo lo que esté dentro */
+    margin: 30px 0;
+}
+
+/* Logo */
+#logo2 {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 180px;
+}
+
+/* Título */
+.registro-header h2 {
+    text-align: center; 
+    display: block;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #8B4513;
+}
+
+/* Estilo del Formulario */
+form#registro {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+    font-weight: bold;
+    color: #5D4037;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, 
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #d7ccc8;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    border-color: #8B4513;
+    outline: none;
+    box-shadow: 0 0 8px rgba(139, 69, 19, 0.3);
+}
+
+/* Errores */
+.error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 3px;
+    display: block; /* Asegura que el error ocupe su propia línea */
+}
+
+/* Botones (Aplica al botón de submit) */
+form#registro button { 
+    background-color: #8B4513;
+    color: #FFF5E1;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    width: 100%; /* El botón ocupa todo el ancho del formulario */
+    margin-top: 10px;
+}
+
+form#registro button:hover {
+    background-color: #A0522D;
+    transform: scale(1.02); /* Ajuste el scale para que no se salga del contenedor */
+}

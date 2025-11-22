@@ -1,0 +1,42 @@
+/* src/styles/productPage.css */
+
+/* Contenedor de la página de productos */
+#pagina-productos {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Título de la página */
+#titulo-productos {
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 48px;
+  margin-top: 40px;
+}
+
+/* Cuadrícula de productos */
+#cuadricula-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo para el filtro por categoría */
+#filtro-categorias {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#filtro-categorias-select {
+  padding: 6px;
+  font-size: 13px;
+}
+
+/* Confirmación de agregado al carrito */
+#ms-confirm-producto {
+  display: none;
+  color: green;
+  padding: 10px;
+}
