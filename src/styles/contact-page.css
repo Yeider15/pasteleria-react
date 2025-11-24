@@ -1,17 +1,11 @@
-/* ---------------------- PÁGINA CONTACTO CSS REQUERIDO ---------------------- */
-
-/* Fondo general de la página de contacto (usa #body2 como referencia) */
 #body2, #contact-page-container {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    /* Asumo que tienes una imagen de fondo. Ajusta la ruta si es necesario */
-    /* background: url("imagenes/fondo2b.jpg") center/cover fixed no-repeat; */
     background-color: #f4f4f4; /* Fallback si la imagen no carga */
     color: #2C2C2C;
-    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la vista */
+    min-height: 100vh; 
 }
 
-/* Estilos para el Encabezado (Compartido con Registro/Login) */
 .registro-header {
     text-align: center;
     margin: 30px 0;
@@ -22,31 +16,28 @@
     max-width: 180px;
 }
 .registro-header h2 {
-    font-family: 'Pacifico', cursive; /* Asegúrate de importar esta fuente */
+    font-family: 'Pacifico', cursive; 
     font-size: 2rem;
     font-weight: bold;
-    color: #4E342E; /* Color del título 'Contáctanos' */
+    color: #4E342E; 
 }
 
-/* Contenedores que envuelven el formulario y la información de contacto */
 .custom-container {
     width: 85%;
     max-width: 700px;
     margin: 30px auto;
-    background: rgba(255, 255, 255, 0.95); /* Fondo blanco con ligera transparencia */
+    background: rgba(255, 255, 255, 0.95); 
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-/* Título 'Envíanos un Mensaje' y 'Información de Contacto' */
 .custom-container h3 {
     color: #BF360C;
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Estilos de Formulario */
 .form-label {
     font-weight: bold;
     color: #3E2723;
@@ -60,19 +51,17 @@
     box-shadow: 0 0 8px rgba(255,112,67,.5);
 }
 
-/* Estilos de Botón (btn-dark) */
 .btn-dark {
-    background: #6D4C41; /* Color base café */
+    background: #6D4C41; 
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     transition: .3s;
 }
 .btn-dark:hover {
-    background: #8D6E63; /* Color café más claro al pasar el mouse */
+    background: #8D6E63; 
 }
 
-/* Estilo para los mensajes de error de validación (usado en React) */
 .error {
     color: red;
     font-size: 0.85rem;
@@ -80,7 +69,6 @@
     display: block;
 }
 
-/* Estilos para Redes Sociales */
 .icono-red {
     width: 40px;
     margin: 10px;

@@ -6,16 +6,13 @@ function ContactPage() {
   return (
     <div id="contact-page-container">
       
-      {/* 1. Título de la Página */}
       <div className="registro-header text-center my-4">
         <img src="/assets/img/pastel1.png" alt="Logo Pasteleria" id="logo2" width="120" />
         <h2>Contáctanos</h2>
       </div>
 
-      {/* 2. Componente Formulario */}
       <ContactForm />
 
-      {/* 3. Información Estática */}
       <div className="custom-container">
         <h3 className="text-center">Información de Contacto</h3>
         <p><strong>Dirección:</strong> Av. Dulzura 1234, Santiago, Chile</p>
